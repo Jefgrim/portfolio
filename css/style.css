@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  height: 100vh;
+  transition: ease-in-out 0.3s;
+}
+
+.header a {
+  text-decoration: none;
+  color: beige;
+}
+
+.header a h1 {
+  font-weight: bolder;
+}
+
+.header p {
+  color: rgb(194, 194, 186);
+}
+
+.header p span {
+  position: relative;
+}
+
+.header p span {
+  color: aqua;
+  font-weight: bold;
+}
+
+.nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(194, 194, 186);
+  margin-right: 15px;
+}
+
+.underline {
+  position: relative;
+}
+
+.nav-list a::after,
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: aqua;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+
+.nav-list a:hover::after,
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+body .activeLink:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: aqua;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+body .activeLink {
+  color: rgb(204, 204, 168);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 50%;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.social-links a:hover {
+  background-color: aqua;
+}
+
+/* offcanvas */
+
+.offcanvas {
+  width: 100% !important;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.offcanvas-header a i {
+  color: beige;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  border-color: gray;
+  margin: 20px;
+}
+
+.offcanvas-body a {
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: beige;
+}
+
+.offcanvas-span-links {
+  position: relative;
+}
+
+/* MODALS DESIGN */
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: beige;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  background-color: rgb(25, 25, 25);
+}
+
+.modal-header a {
+  text-decoration: none;
+  color: beige;
+  margin-left: 15px;
+}
+
+.modal-header a h2 {
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+.modal-containers {
+  background-color: rgba(25, 25, 25, 0.7);
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.container-title {
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 0;
+  color: gray;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.container-title::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: aqua;
+  margin: 4px 10px;
+}
+
+.container-sub-title {
+  color: beige;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 0px 20px 0px 20px;
+}
+
+.aqua-text {
+  color: aqua;
+  font-weight: bolder;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+.modal-footer p {
+  font-size: xx-small;
+}
+
+/* About me modal */
+
+.profile-photo {
+  min-width: 250px;
+  max-width: 90%;
+  height: 250px;
+}
+
+.about-container a {
+  text-decoration: none;
+  color: beige;
+}
+
+.about-info i {
+  color: aqua;
+}
+
+.hobbies div {
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.hobbies div p {
+  margin: 0;
+}
+
+.hobbies i {
+  margin-bottom: 10px;
+  font-size: xx-large;
+}
+
+/* Text Card With Image */
+
+.card-w-image p {
+  background-color: rgba(255, 255, 255, 0.08);
+  /* height: 100px; */
+  text-align: center;
+  padding: 30px 30px 60px 30px;
+  border-radius: 5px;
+  min-width: 198px;
+  max-width: 900px;
+  margin: 10px;
+}
+
+.card-w-image-image-container {
+  background-color: rgba(255, 255, 255, 0.08);
+  width: fit-content;
+  border-radius: 40px;
+  margin-top: -60px;
+}
+
+.card-w-image-image-container img {
+  width: 60;
+  height: 60px;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+/* Resume Modal */
+
+.resume-container h3 {
+  margin-left: 20px;
+}
+
+.resume-content {
+  margin: 20px;
+  border-left: 1px solid;
+  border-color: gray;
+  position: relative;
+}
+
+.resume-content h4,
+.resume-content p {
+  margin-left: 10px;
+}
+
+.resume-aqua-text {
+  color: aqua;
+}
+
+.resume-content::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: aqua;
+  border: 2px solid aqua;
+}
+
+.skill-title {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.progress {
+  margin-left: 10px;
+}
+
+.progress-bar {
+  background-color: rgb(21, 206, 206);
+}
+
+.education-container div,
+.school {
+  margin-bottom: 0;
+}
+
+.education-container div {
+  margin-top: 0;
+}
+
+.education-container .school {
+  padding-bottom: 20px;
+}
+
+.year {
+  background-color: rgba(255, 255, 255, 0.08);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.school {
+  font-style: italic;
+}
+
+/* Services Modal */
+
+.services-content-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.services-content {
+  padding: 20px;
+  height: fit-content;
+  width: 300px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon-logo {
+  margin-bottom: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: -10px -10px 0px 0px rgba(255, 255, 255, 0.08);
+  background-color: aqua;
+  color: beige;
+  font-size: large;
+}
+
+.services-content p {
+  font-size: smaller;
+  text-align: center;
+}
+
+.services-content a i {
+  color: beige;
+}
+
+.services-content a i:hover {
+  color: aqua;
+}
+
+/* Portfolio Modal */
+
+.works-sample {
+  background-color: rgba(255, 255, 255, 0.08);
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works-sample img {
+  min-width: 150;
+  height: 200px;
+}
+
+.profile-img {
+  object-fit: cover;
+}
+
+.works-sample a {
+  text-decoration: none;
+  color: beige;
+  background-color: rgba(128, 128, 128, 0.3);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.works-sample a:hover {
+  background-color: aqua;
+}
+
+/* Contact Modal */
+
+.contact-info-box {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info-box-divider {
+  width: fit-content;
+}
+
+.contact-info-box-divider a {
+  text-decoration: none;
+}
+
+.contact-info-box-title {
+  color: gray;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.contact-info-email-address {
+  font-size: smaller;
+}
+
+.contact-icon {
+  padding: 15px;
+  border-radius: 30px;
+  background-color: rgb(84, 81, 81);
+  color: beige;
+}
+
+.contact-socials-icon {
+  color: beige;
+  margin-right: 5px;
+  font-size: large;
+}
+
+.contact-socials-icon:hover {
+  color: aqua;
+}
+
+.contact-info-box p {
+  margin-bottom: 0;
+}
+
+.form-floating {
+  padding: 5px;
+}
+
+.contact-form-container {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  color: gray;
+}
+
+.contact-input {
+  height: 50px !important;
+}
+
+.message-input {
+  height: 150px !important;
+}
+
+.contact-form-btn-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-form-btn {
+  border: 0;
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: beige;
+}
+
+.nav-bars {
+  display: none;
+}
+
+.nav-bars-modal {
+  display: none;
+}
+
+.nav-bars-icon {
+  color: beige;
+}
+
+/* Move navbar to top */
+
+@media (max-width: 991px) {
+  #nav-bars {
+    display: block;
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 30px;
+  }
+
+  #nav-bars-modal {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jefgrim Alvar</title>
+    <script
+      src="https://kit.fontawesome.com/b6f073fba6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- About Modal -->
+    <div
+      class="modal"
+      data-bs-keyboard="false"
+      id="aboutModal"
+      tabindex="-1"
+      aria-labelledby="aboutModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <a href="#"><h2>Jefgrim Alvar</h2></a>
+
+            <a
+              class="collapse show nav-bars"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavListLinksAboutModal"
+              aria-controls="offcanvasNavListLinksAboutModal"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="nav-bars-modal"
+            >
+              <span
+                class="navbar-bars-icon"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-bars-modal"
+                aria-expanded="true"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </a>
+
+            <nav class="nav-modal nav-list navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navListLinks">
+                <a href="#home" data-bs-dismiss="modal">
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".homeBtnCollapse"
+                    aria-expanded="false"
+                    >Home
+                  </span>
+                </a>
+                <a href="#about" class="activeLink"><span>About</span></a>
+                <a
+                  href="#resume"
+                  data-bs-toggle="modal"
+                  data-bs-target="#resumeModal"
+                >
+                  <span>Resume</span>
+                </a>
+                <a
+                  href="#services"
+                  data-bs-toggle="modal"
+                  data-bs-target="#servicesModal"
+                >
+                  <span>Services</span>
+                </a>
+                <a
+                  href="#portfolio"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolioModal"
+                >
+                  <span>Portfolio</span>
+                </a>
+                <a
+                  href="#contact"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  <span>Contact</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="modal-body">
+            <div
+              class="about-container modal-containers animate__animated animate__fadeIn"
+            >
+              <h2 class="container-title">ABOUT</h2>
+              <p class="container-sub-title">LEARN MORE ABOUT ME</p>
+              <div class="row about-me g-0">
+                <div
+                  class="d-flex align-items-center justify-content-center col-md-3 col-12"
+                >
+                  <img
+                    src="images/profile-photo.png"
+                    class="profile-photo"
+                    alt="profile-photo"
+                  />
+                </div>
+                <div class="col-md-9 col-12 p-sm-5 p-3">
+                  <h3 class="aqua-text">Full Stack Web Developer</h3>
+                  <p>
+                    A web developer who can develop both front-end and back-end
+                    of the website.
+                  </p>
+                  <div class="row about-info">
+                    <div class="col-md-6 col-12">
+                      <p>
+                        <i class="fa-solid fa-caret-right"></i> Birthday: July 7
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-caret-right"></i> Nickname: Jed
+                      </p>
+                      <p><i class="fa-solid fa-caret-right"></i> Height: 5'3</p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <p><i class="fa-solid fa-caret-right"></i> Age: 21</p>
+                      <p>
+                        <i class="fa-solid fa-caret-right"></i> Religion: Roman
+                        Catholic
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-caret-right"></i> Status: Single
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="container-title">HOBBIES</p>
+              <div
+                class="d-flex flex-row flex-wrap justify-content-evenly hobbies"
+              >
+                <div class="d-flex flex-column align-items-center">
+                  <i class="fa-solid fa-tv"></i>
+                  <p class="m-0">Watching Anime</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <i class="fa-solid fa-tv"></i>
+                  <p>Watching Movies</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <i class="fa-solid fa-tv"></i>
+                  <p>Watching TV Series</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <i class="fa-solid fa-computer"></i>
+                  <p>Playing Online Games</p>
+                </div>
+              </div>
+              <p class="container-title">FAVORITE QUOTE</p>
+              <div class="d-flex flex-row justify-content-center row g-0">
+                <div class="d-flex flex-column align-items-center card-w-image">
+                  <p class="fst-italic">
+                    <i class="fa-solid fa-quote-left"></i>
+                    I don't wanna live a thousand years. If I just live through
+                    today, that'll be enough.
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                  <div class="card-w-image-image-container">
+                    <img src="images/portgas-d-ace.jpg" alt="Portgas D. Ace" />
+                  </div>
+                  <h3>Portgas D. Ace</h3>
+                </div>
+              </div>
+              <p class="container-title">FAVORITE MUSIC</p>
+              <div class="d-flex flex-row justify-content-center row g-0">
+                <div class="d-flex flex-column align-items-center card-w-image">
+                  <p>The Man Who Can't Be Moved</p>
+                  <div class="card-w-image-image-container">
+                    <img src="images/the-script.jpg" alt="Portgas D. Ace" />
+                  </div>
+                  <h3>The Script</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <p>Developed by Jefgrim Alvar</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Modal Offcanvas -->
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasNavListLinksAboutModal"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a data-bs-dismiss="offcanvas" aria-label="Close"
+            ><span
+              data-bs-toggle="collapse"
+              data-bs-target="#nav-bars-modal"
+              aria-expanded="false"
+              ><i class="fa-solid fa-xmark"></i></span
+          ></a>
+        </div>
+        <div class="offcanvas-body">
+          <a href="#home" data-bs-dismiss="modal">
+            <span
+              data-bs-toggle="collapse"
+              data-bs-target=".homeBtnCollapse"
+              aria-expanded="false"
+              ><span data-bs-dismiss="offcanvas" class="underline"
+                >Home</span
+              ></span
+            ></a
+          >
+          <a href="#about"
+            ><span class="activeLink offcanvas-span-links">About</span></a
+          >
+          <a
+            href="#resume"
+            data-bs-toggle="modal"
+            data-bs-target="#resumeModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Resume</span>
+          </a>
+          <a
+            href="#services"
+            data-bs-toggle="modal"
+            data-bs-target="#servicesModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Services</span>
+          </a>
+          <a
+            href="#portfolio"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Portfolio</span>
+          </a>
+          <a
+            href="#contact"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Contact</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Modal -->
+
+    <div
+      class="modal"
+      data-bs-keyboard="false"
+      id="resumeModal"
+      tabindex="-1"
+      aria-labelledby="resumeModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <a href="#"><h2>Jefgrim Alvar</h2></a>
+            <a
+              class="collapse show nav-bars"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavListLinksResumeModal"
+              aria-controls="offcanvasNavListLinksResumeModal"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="nav-bars-modal"
+            >
+              <span
+                class="navbar-bars-icon"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-bars-modal"
+                aria-expanded="true"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </a>
+
+            <nav class="nav-modal nav-list navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navListLinks">
+                <a href="#home" data-bs-dismiss="modal">
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".homeBtnCollapse"
+                    aria-expanded="false"
+                    >Home
+                  </span>
+                </a>
+                <a
+                  href="#about"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aboutModal"
+                >
+                  <span>About</span>
+                </a>
+                <a href="#resume" class="activeLink"><span>Resume</span></a>
+                <a
+                  href="#services"
+                  data-bs-toggle="modal"
+                  data-bs-target="#servicesModal"
+                >
+                  <span>Services</span>
+                </a>
+                <a
+                  href="#portfolio"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolioModal"
+                >
+                  <span>Portfolio</span>
+                </a>
+                <a
+                  href="#contact"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  <span>Contact</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="modal-body">
+            <div
+              class="resume-container modal-containers animate__animated animate__fadeIn"
+            >
+              <h2 class="container-title">RESUME</h2>
+              <p class="container-sub-title">CHECK MY RESUME</p>
+              <div class="row g-0 resume-content-container">
+                <div class="col-md-6 col-12 sumarry-container">
+                  <h3>Summary</h3>
+                  <div class="col resume-content">
+                    <h4 class="resume-aqua-text">Jefgrim Alvar</h4>
+                    <p>
+                      Developing Website using HTML and CSS is what I am trained
+                      to do. I am currently learning new coding languages to be
+                      able to improve my skills in web development.
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-location-dot"></i> Davao City,
+                        Philippines
+                      </li>
+                      <li><i class="fa-solid fa-phone"></i> (+63)9662232867</li>
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        jefgrimalvar@gmail.com
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col resume-content">
+                    <p>SKILLS</p>
+                    <div class="row skills">
+                      <div class="col">
+                        <p class="skill-title">HTML</p>
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            style="width: 70%"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            70%
+                          </div>
+                        </div>
+                        <p class="skill-title">CSS</p>
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            style="width: 60%"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            60%
+                          </div>
+                        </div>
+                        <p class="skill-title">JAVASCRIPT</p>
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            style="width: 20%"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            20%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <p class="skill-title">BOOTSTRAP</p>
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            style="width: 60%"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            60%
+                          </div>
+                        </div>
+                        <p class="skill-title">PHP</p>
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            style="width: 10%"
+                            aria-valuenow="10"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            10%
+                          </div>
+                        </div>
+                        <p class="skill-title">REACT.JS</p>
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            style="width: 15%"
+                            aria-valuenow="15"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            15%
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12 education-container">
+                  <h3>Education</h3>
+                  <div class="col resume-content">
+                    <h4 class="resume-aqua-text">Full Stack Web Development</h4>
+                    <p class="year">2022 - Present</p>
+                    <p class="school">Kodego</p>
+                  </div>
+                  <div class="col resume-content">
+                    <h4 class="resume-aqua-text">
+                      Bachelor of Science in Information Technology
+                    </h4>
+                    <p class="year">2020 - 2021</p>
+                    <p class="school">University of Mindanao</p>
+                  </div>
+                  <div class="col resume-content">
+                    <h4 class="resume-aqua-text">TVL - ICT Programming</h4>
+                    <p class="year">2018 - 2020</p>
+                    <p class="school">AMA Computer College of Davao</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <p>Developed by Jefgrim Alvar</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resume Modal Offcanvas -->
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasNavListLinksResumeModal"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a data-bs-dismiss="offcanvas" aria-label="Close"
+            ><span
+              data-bs-toggle="collapse"
+              data-bs-target="#nav-bars-modal"
+              aria-expanded="false"
+              ><i class="fa-solid fa-xmark"></i></span
+          ></a>
+        </div>
+        <div class="offcanvas-body">
+          <a href="#home" data-bs-dismiss="modal">
+            <span
+              data-bs-toggle="collapse"
+              data-bs-target=".homeBtnCollapse"
+              aria-expanded="false"
+              ><span data-bs-dismiss="offcanvas" class="underline"
+                >Home</span
+              ></span
+            ></a
+          >
+          <a href="#about" data-bs-toggle="modal" data-bs-target="#aboutModal">
+            <span data-bs-dismiss="offcanvas" class="underline">About</span>
+          </a>
+          <a href="#about"
+            ><span class="activeLink offcanvas-span-links">Resume</span></a
+          >
+          <a
+            href="#services"
+            data-bs-toggle="modal"
+            data-bs-target="#servicesModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Services</span>
+          </a>
+          <a
+            href="#portfolio"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Portfolio</span>
+          </a>
+          <a
+            href="#contact"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Contact</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Modal -->
+
+    <div
+      class="modal"
+      data-bs-keyboard="false"
+      id="servicesModal"
+      tabindex="-1"
+      aria-labelledby="servicesModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <a href="#"><h2>Jefgrim Alvar</h2></a>
+            <a
+              class="collapse show nav-bars"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavListLinksServicesModal"
+              aria-controls="offcanvasNavListLinksServicesModal"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="nav-bars-modal"
+            >
+              <span
+                class="navbar-bars-icon"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-bars-modal"
+                aria-expanded="true"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </a>
+
+            <nav class="nav-modal nav-list navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navListLinks">
+                <a href="#home" data-bs-dismiss="modal">
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".homeBtnCollapse"
+                    aria-expanded="false"
+                    >Home
+                  </span>
+                </a>
+                <a
+                  href="#about"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aboutModal"
+                >
+                  <span>About</span>
+                </a>
+                <a
+                  href="#resume"
+                  data-bs-toggle="modal"
+                  data-bs-target="#resumeModal"
+                >
+                  <span>Resume</span>
+                </a>
+                <a href="#services" class="activeLink"><span>Services</span></a>
+                <a
+                  href="#portfolio"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolioModal"
+                >
+                  <span>Portfolio</span>
+                </a>
+                <a
+                  href="#contact"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  <span>Contact</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="modal-body">
+            <div
+              class="services-container modal-containers animate__animated animate__fadeIn"
+            >
+              <h2 class="container-title">SERVICES</h2>
+              <p class="container-sub-title">MY SERVICES</p>
+              <div class="services-content-container">
+                <div class="services-content">
+                  <i class="fa-solid fa-code icon-logo"></i>
+                  <p>Front-End Web Development</p>
+                  <p class="collapse front-end-info">
+                    Development of the graphical user interface of a website,
+                    through the use of HTML, CSS, and JavaScript, so that users
+                    can view and interact with that website.
+                  </p>
+                  <a
+                    data-bs-toggle="collapse"
+                    href=".front-end-info"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <i
+                      class="fa-solid fa-angles-down collapse show front-end-info"
+                    ></i>
+                    <i
+                      class="fa-solid fa-angles-up collapse front-end-info"
+                    ></i>
+                  </a>
+                </div>
+                <div class="services-content">
+                  <i class="fa-solid fa-database icon-logo"></i>
+                  <p>Back-End Web Development</p>
+                  <p class="collapse back-end-info">
+                    Back-end development means working on server-side software,
+                    which focuses on everything you can't see on a website.
+                    Back-end developers ensure the website performs correctly,
+                    focusing on databases, back-end logic, application
+                    programming interface (APIs), architecture, and servers.
+                  </p>
+                  <a
+                    data-bs-toggle="collapse"
+                    href=".back-end-info"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <i
+                      class="fa-solid fa-angles-down collapse show back-end-info"
+                    ></i>
+                    <i class="fa-solid fa-angles-up collapse back-end-info"></i>
+                  </a>
+                </div>
+                <div class="services-content">
+                  <i class="fa-brands fa-stack-overflow icon-logo"></i>
+                  <p>Full Stack Web Development</p>
+                  <p class="collapse full-stack-info">
+                    The development of both front end(client side) and back
+                    end(server side) portions of web application.
+                  </p>
+                  <a
+                    data-bs-toggle="collapse"
+                    href=".full-stack-info"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <i
+                      class="fa-solid fa-angles-down collapse show full-stack-info"
+                    ></i>
+                    <i
+                      class="fa-solid fa-angles-up collapse full-stack-info"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <p>Developed by Jefgrim Alvar</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resume Modal Offcanvas -->
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasNavListLinksServicesModal"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a data-bs-dismiss="offcanvas" aria-label="Close"
+            ><span
+              data-bs-toggle="collapse"
+              data-bs-target="#nav-bars-modal"
+              aria-expanded="false"
+              ><i class="fa-solid fa-xmark"></i></span
+          ></a>
+        </div>
+        <div class="offcanvas-body">
+          <a href="#home" data-bs-dismiss="modal">
+            <span
+              data-bs-toggle="collapse"
+              data-bs-target=".homeBtnCollapse"
+              aria-expanded="false"
+              ><span data-bs-dismiss="offcanvas" class="underline"
+                >Home</span
+              ></span
+            ></a
+          >
+          <a href="#about" data-bs-toggle="modal" data-bs-target="#aboutModal">
+            <span data-bs-dismiss="offcanvas" class="underline">About</span>
+          </a>
+          <a
+            href="#resume"
+            data-bs-toggle="modal"
+            data-bs-target="#resumeModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Resume</span>
+          </a>
+          <a href="#services"
+            ><span class="activeLink offcanvas-span-links">Services</span></a
+          >
+          <a
+            href="#portfolio"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Portfolio</span>
+          </a>
+          <a
+            href="#contact"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Contact</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal -->
+
+    <div
+      class="modal"
+      data-bs-keyboard="false"
+      id="portfolioModal"
+      tabindex="-1"
+      aria-labelledby="portfolioModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <a href="#"><h2>Jefgrim Alvar</h2></a>
+            <a
+              class="collapse show nav-bars"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavListLinksPortfolioModal"
+              aria-controls="offcanvasNavListLinksPortfolioModal"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="nav-bars-modal"
+            >
+              <span
+                class="navbar-bars-icon"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-bars-modal"
+                aria-expanded="true"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </a>
+
+            <nav class="nav-modal nav-list navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navListLinks">
+                <a href="#home" data-bs-dismiss="modal">
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".homeBtnCollapse"
+                    aria-expanded="false"
+                    >Home
+                  </span>
+                </a>
+                <a
+                  href="#about"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aboutModal"
+                >
+                  <span>About</span>
+                </a>
+                <a
+                  href="#resume"
+                  data-bs-toggle="modal"
+                  data-bs-target="#resumeModal"
+                >
+                  <span>Resume</span>
+                </a>
+                <a
+                  href="#services"
+                  data-bs-toggle="modal"
+                  data-bs-target="#servicesModal"
+                >
+                  <span>Services</span>
+                </a>
+                <a href="#portfolio" class="activeLink"
+                  ><span>Portfolio</span></a
+                >
+                <a
+                  href="#contact"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  <span>Contact</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="modal-body">
+            <div
+              class="porfolio-container modal-containers animate__animated animate__fadeIn"
+            >
+              <h2 class="container-title">PORTFOLIO</h2>
+              <p class="container-sub-title">MY WORKS</p>
+              <div class="row porfolio-content-container g-0">
+                <div class="col-md-4 col-12">
+                  <div class="card works-sample">
+                    <img
+                      src="images/onlinelibrary-logo.svg"
+                      class="card-img-top"
+                      alt="Online Library Logo"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Online Library</h5>
+                      <p class="card-text">
+                        Online Library Website developed using only HTML and
+                        CSS. A front-end project.
+                      </p>
+                      <a
+                        href="https://jefgrim.github.io/JefsOnlineLibrary/"
+                        target="_blank"
+                        >Check Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="card works-sample">
+                    <img
+                      src="images/portfolio-screenshot.png"
+                      class="card-img-top portfolio-img"
+                      alt="portfolio website screenshot"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Portfolio</h5>
+                      <p class="card-text">
+                        My Portfolio website, developed using HTML CSS and
+                        Bootstrap only.
+                      </p>
+                      <a
+                        href="https://jefgrim.github.io/portfolio/"
+                        target="_blank"
+                        >Check Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="card works-sample">
+                    <img
+                      src="images/under-construction.svg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Major Project II</h5>
+                      <p class="card-text">
+                        This project is currently under construction, will be
+                        updated once it is done.
+                      </p>
+                      <a href="#">Coming Soon</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <p>Developed by Jefgrim Alvar</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Modal Offcanvas -->
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasNavListLinksPortfolioModal"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a data-bs-dismiss="offcanvas" aria-label="Close"
+            ><span
+              data-bs-toggle="collapse"
+              data-bs-target="#nav-bars-modal"
+              aria-expanded="false"
+              ><i class="fa-solid fa-xmark"></i></span
+          ></a>
+        </div>
+        <div class="offcanvas-body">
+          <a href="#home" data-bs-dismiss="modal">
+            <span
+              data-bs-toggle="collapse"
+              data-bs-target=".homeBtnCollapse"
+              aria-expanded="false"
+              ><span data-bs-dismiss="offcanvas" class="underline"
+                >Home</span
+              ></span
+            ></a
+          >
+          <a href="#about" data-bs-toggle="modal" data-bs-target="#aboutModal">
+            <span data-bs-dismiss="offcanvas" class="underline">About</span>
+          </a>
+          <a
+            href="#resume"
+            data-bs-toggle="modal"
+            data-bs-target="#resumeModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Resume</span>
+          </a>
+          <a
+            href="#services"
+            data-bs-toggle="modal"
+            data-bs-target="#servicesModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Services</span>
+          </a>
+          <a href="#portfolio"
+            ><span class="activeLink offcanvas-span-links">Portfolio</span></a
+          >
+          <a
+            href="#contact"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Contact</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+
+    <div
+      class="modal"
+      data-bs-keyboard="false"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <a href="#"><h2>Jefgrim Alvar</h2></a>
+            <a
+              class="collapse show nav-bars"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavListLinksContactModal"
+              aria-controls="offcanvasNavListLinksContactModal"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="nav-bars-modal"
+            >
+              <span
+                class="navbar-bars-icon"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-bars-modal"
+                aria-expanded="true"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </a>
+
+            <nav class="nav-modal nav-list navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navListLinks">
+                <a href="#home" data-bs-dismiss="modal">
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".homeBtnCollapse"
+                    aria-expanded="false"
+                    >Home
+                  </span>
+                </a>
+                <a
+                  href="#about"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aboutModal"
+                >
+                  <span>About</span>
+                </a>
+                <a
+                  href="#resume"
+                  data-bs-toggle="modal"
+                  data-bs-target="#resumeModal"
+                >
+                  <span>Resume</span>
+                </a>
+                <a
+                  href="#services"
+                  data-bs-toggle="modal"
+                  data-bs-target="#servicesModal"
+                >
+                  <span>Services</span>
+                </a>
+                <a
+                  href="#portfolio"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolioModal"
+                >
+                  <span>Portfolio</span>
+                </a>
+                <a href="#contact" class="activeLink"
+                ><span>Contact</span></a
+              >
+              </div>
+            </nav>
+          </div>
+          <div class="modal-body">
+            <div
+              class="contact-container modal-containers animate__animated animate__fadeIn"
+            >
+              <h2 class="container-title">CONTACT</h2>
+              <p class="container-sub-title">CONTACT ME</p>
+              <div class="row contact-content-container g-0">
+                <div class="col-md-6 col-12">
+                  <div class="row social-profiles contact-info-box">
+                    <div class="contact-info-box-divider">
+                      <i class="fa-solid fa-share-nodes contact-icon"></i>
+                    </div>
+                    <div class="contact-info-box-divider">
+                      <p class="contact-info-box-title">Social Profiles</p>
+                      <a href="https://twitter.com/Jefgrim" target="_blank">
+                        <i
+                          class="fa-brands fa-twitter contact-socials-icon"
+                        ></i>
+                      </a>
+                      <a href="https://www.facebook.com/jefgrimA" target="_blank">
+                        <i
+                          class="fa-brands fa-facebook contact-socials-icon"
+                        ></i>
+                      </a>
+                      <a href="https://www.instagram.com/jefgrim/" target="_blank">
+                        <i
+                          class="fa-brands fa-square-instagram contact-socials-icon"
+                        ></i>
+                      </a>
+                      <a href="https://m.me/jefgrimA" target="_blank">
+                        <i
+                          class="fa-brands fa-facebook-messenger contact-socials-icon"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="row contact-email contact-info-box">
+                    <div class="contact-info-box-divider">
+                      <i class="fa-solid fa-envelope contact-icon"></i>
+                    </div>
+                    <div class="contact-info-box-divider">
+                      <p class="contact-info-box-title">Email Me</p>
+                      <p class="contact-info-email-address">
+                        jefgrimalvar@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form class="row contact-content-container g-0">
+                <div class="col contact-form-container g-0">
+                  <div class="row">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control contact-input"
+                          id="nameFloatingInput"
+                          placeholder="Ex. Juan Dela Cruz"
+                          required
+                        />
+                        <label for="nameFloatingInput">Your Name</label>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control contact-input"
+                          id="emailFloatingInput"
+                          placeholder="name@example.com"
+                          required
+                        />
+                        <label for="lastnameFloatingInput">Your Email</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control contact-input"
+                          id="subjectFloatingInput"
+                          placeholder="Ex. Job Offer"
+                        />
+                        <label for="nameFloatingInput">Subject</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control message-input"
+                          placeholder="Leave a message here"
+                          id="floatingMessageArea"
+                          required
+                        ></textarea>
+                        <label for="floatingMessageArea">Message</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-form-btn-container">
+                    <button class="contact-form-btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <p>Developed by Jefgrim Alvar</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Modal Offcanvas -->
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasNavListLinksContactModal"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a data-bs-dismiss="offcanvas" aria-label="Close"
+            ><span
+              data-bs-toggle="collapse"
+              data-bs-target="#nav-bars-modal"
+              aria-expanded="false"
+              ><i class="fa-solid fa-xmark"></i></span
+          ></a>
+        </div>
+        <div class="offcanvas-body">
+          <a href="#home" data-bs-dismiss="modal">
+            <span
+              data-bs-toggle="collapse"
+              data-bs-target=".homeBtnCollapse"
+              aria-expanded="false"
+              ><span data-bs-dismiss="offcanvas" class="underline"
+                >Home</span
+              ></span
+            ></a
+          >
+          <a href="#about" data-bs-toggle="modal" data-bs-target="#aboutModal">
+            <span data-bs-dismiss="offcanvas" class="underline">About</span>
+          </a>
+          <a
+            href="#resume"
+            data-bs-toggle="modal"
+            data-bs-target="#resumeModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Resume</span>
+          </a>
+          <a
+            href="#services"
+            data-bs-toggle="modal"
+            data-bs-target="#servicesModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Services</span>
+          </a>
+          <a
+            href="#porfolio"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal"
+          >
+            <span data-bs-dismiss="offcanvas" class="underline">Portfolio</span>
+          </a>
+          <a href="#contact"
+            ><span class="activeLink offcanvas-span-links">Contact</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Page -->
+
+    <div class="main container-fluid">
+      <div
+        class="header ms-lg-5 collapse d-flex flex-column justify-content-center align-items-lg-start align-items-center"
+        id="collapseHeader"
+      >
+        <a href="#home" class="collapse show homeBtnCollapse"
+          ><h1>Jefgrim Alvar</h1></a
+        >
+        <p class="collapse show homeBtnCollapse text-center">
+          I'm a junior <span>web developer</span> from Davao City.
+        </p>
+
+        <a
+          class="collapse show nav-bars"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavListLinks"
+          aria-controls="offcanvasNavListLinks"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="nav-bars"
+        >
+          <span
+            class="navbar-bars-icon"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-bars"
+            aria-expanded="true"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+        </a>
+
+        <nav
+          class="collapse show homeBtnCollapse nav-list navbar navbar-expand-lg"
+        >
+          <div class="collapse navbar-collapse" id="navListLinks">
+            <a href="#home" class="activeLink">Home</a>
+            <a
+              href="#about"
+              data-bs-toggle="modal"
+              data-bs-target="#aboutModal"
+              class="nav-item"
+            >
+              <span
+                data-bs-toggle="collapse"
+                data-bs-target=".homeBtnCollapse"
+                aria-expanded="true"
+                >About</span
+              ></a
+            >
+            <a
+              href="#resume"
+              data-bs-toggle="modal"
+              data-bs-target="#resumeModal"
+            >
+              <span
+                data-bs-toggle="collapse"
+                data-bs-target=".homeBtnCollapse"
+                aria-expanded="true"
+                >Resume</span
+              ></a
+            >
+            <a
+              href="#services"
+              data-bs-toggle="modal"
+              data-bs-target="#servicesModal"
+            >
+              <span
+                data-bs-toggle="collapse"
+                data-bs-target=".homeBtnCollapse"
+                aria-expanded="true"
+                >Services</span
+              ></a
+            >
+            <a
+              href="#portfolio"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal"
+            >
+              <span
+                data-bs-toggle="collapse"
+                data-bs-target=".homeBtnCollapse"
+                aria-expanded="true"
+                >Portfolio</span
+              ></a
+            >
+            <a
+              href="#contact"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              <span
+                data-bs-toggle="collapse"
+                data-bs-target=".homeBtnCollapse"
+                aria-expanded="true"
+                >Contact</span
+              ></a
+            >
+          </div>
+        </nav>
+
+        <div class="social-links collapse show homeBtnCollapse">
+          <a href="https://twitter.com/Jefgrim" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.facebook.com/jefgrimA" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://github.com/Jefgrim" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Page Offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavListLinks"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <a data-bs-dismiss="offcanvas" aria-label="Close"
+          ><span
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-bars"
+            aria-expanded="false"
+            ><i class="fa-solid fa-xmark"></i></span
+        ></a>
+      </div>
+      <div class="offcanvas-body">
+        <a href="#home"
+          ><span class="activeLink offcanvas-span-links">Home</span></a
+        >
+        <a href="#about" data-bs-toggle="modal" data-bs-target="#aboutModal">
+          <span
+            data-bs-toggle="collapse"
+            data-bs-target=".homeBtnCollapse"
+            aria-expanded="true"
+            ><span data-bs-dismiss="offcanvas" class="underline"
+              >About</span
+            ></span
+          ></a
+        >
+        <a href="#resume" data-bs-toggle="modal" data-bs-target="#resumeModal">
+          <span
+            data-bs-toggle="collapse"
+            data-bs-target=".homeBtnCollapse"
+            aria-expanded="true"
+            ><span data-bs-dismiss="offcanvas" class="underline"
+              >Resume</span
+            ></span
+          ></a
+        >
+        <a
+          href="#services"
+          data-bs-toggle="modal"
+          data-bs-target="#servicesModal"
+        >
+          <span
+            data-bs-toggle="collapse"
+            data-bs-target=".homeBtnCollapse"
+            aria-expanded="true"
+            ><span data-bs-dismiss="offcanvas" class="underline"
+              >Services</span
+            ></span
+          ></a
+        >
+        <a
+          href="#portfolio"
+          data-bs-toggle="modal"
+          data-bs-target="#portfolioModal"
+        >
+          <span
+            data-bs-toggle="collapse"
+            data-bs-target=".homeBtnCollapse"
+            aria-expanded="true"
+            ><span data-bs-dismiss="offcanvas" class="underline"
+              >Portfolio</span
+            ></span
+          ></a
+        >
+        <a
+          href="#contact"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+        >
+          <span
+            data-bs-toggle="collapse"
+            data-bs-target=".homeBtnCollapse"
+            aria-expanded="true"
+            ><span data-bs-dismiss="offcanvas" class="underline"
+              >Contact</span
+            ></span
+          ></a
+        >
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

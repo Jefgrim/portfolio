@@ -309,13 +309,13 @@ body .activeLink {
   border: 2px solid aqua;
 }
 
+.resume-content i {
+  color: aqua;
+}
+
 .skill-title {
   margin: 0;
   margin-top: 10px;
-}
-
-.skills i {
-  color: aqua;
 }
 
 .progress {
@@ -531,7 +531,7 @@ body .activeLink {
   #nav-bars {
     display: block;
     position: absolute;
-    
+
     top: 0;
     right: 0;
     font-size: x-large;

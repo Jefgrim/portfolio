@@ -416,14 +416,15 @@ body .activeLink {
 
 .works-sample a {
   text-decoration: none;
-  color: beige;
-  background-color: rgba(128, 128, 128, 0.3);
+  color: black;
+  background-color: aqua;
   padding: 8px;
   border-radius: 5px;
 }
 
 .works-sample a:hover {
-  background-color: aqua;
+  background-color: gray;
+  color: aqua;
 }
 
 /* Contact Modal */
@@ -510,7 +511,12 @@ body .activeLink {
   padding: 10px;
   margin: 10px;
   text-decoration: none;
-  color: beige;
+  color: black;
+}
+
+.contact-form-btn:hover {
+  background-color: gray;
+  color: aqua;
 }
 
 .nav-bars {
@@ -531,7 +537,6 @@ body .activeLink {
   #nav-bars {
     display: block;
     position: absolute;
-
     top: 0;
     right: 0;
     font-size: x-large;

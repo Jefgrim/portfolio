@@ -314,6 +314,10 @@ body .activeLink {
   margin-top: 10px;
 }
 
+.skills i {
+  color: aqua;
+}
+
 .progress {
   margin-left: 10px;
 }
